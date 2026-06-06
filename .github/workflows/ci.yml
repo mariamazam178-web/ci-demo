@@ -7,7 +7,7 @@ on:
     branches: [main]
 
 env:
-  IMAGE_NAME: yourdockerhubusername/ci-demo   # change this
+  IMAGE_NAME: ${{ secrets.DOCKER_USERNAME }}/myapp
 
 jobs:
   test:
